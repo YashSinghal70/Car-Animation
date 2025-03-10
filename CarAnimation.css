@@ -1,0 +1,220 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.sky
+{
+background-image: url(sky.jpg);
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+position: relative;
+overflow-x:hidden ;
+}
+.road
+{
+background-image: url(road.jpg);
+width: 2000%;
+height: 200px;
+position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 1;
+animation: road 5s linear infinite;
+background-repeat: repeat-x;
+display: block;
+}
+@keyframes road
+ {
+   /* 0%
+   {
+    transform: translateX(-1000px);
+   } 
+   50%
+   {
+    transform: translateX(-200px);
+   } */
+   100%
+   {
+    transform: translateX(-3400px);
+   }
+}
+.city
+{
+    background-image: url(city.png);
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    bottom: 198px;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+   
+}
+@keyframes city {
+    100%
+    {
+        transform: translateX(-1400px);
+    }
+}
+.car
+{
+    width: 330px;
+    position: absolute;
+    transform: translateX(-50%);
+bottom: 100px;
+left: 50%;
+z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation: carup 1s linear infinite;
+}
+@keyframes carup {
+   0%
+    {
+        transform: translateY(-1px);
+    }
+    
+    50%
+    {
+        transform: translateY(1px);
+    }
+    100%
+    {
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+left: 50%;
+bottom: 78px;
+transform: translateX(-50%);
+position: absolute;
+z-index: 2;
+}
+.wheel img
+{
+    width: 60px;
+    animation: wheel 1s linear infinite;
+}
+.Backwheel
+{
+    left: -136px;
+    bottom: 32px;
+    position: absolute;
+}
+.Frontwheel
+{
+    bottom: 33px;
+    left: 66px;
+position: absolute;
+}
+@keyframes wheel {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.sun
+{
+    width: 80px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+
+}
+.sun img
+{
+   width: 100%;
+}
+.flag
+{
+    width: 115px;
+    position: absolute;
+    height: 105px;
+    top: 321px;
+    left: 27%;
+}
+.flag img
+{
+   width: 100%;
+   height: 100%;
+}
+.txt
+{
+    font-size:30px;
+    margin: 10px;
+    text-align: center;
+    /* flex-wrap: nowrap; */
+}
+.h{
+   
+    background-color: orange;
+}
+.i
+{
+background-color: white;
+}
+.d
+{
+background-color: rgb(16, 182, 16);
+}
+ @media only screen and (min-width:440px)
+ {
+    .flag
+{
+    left: 35%;
+}
+}
+@media only screen and (min-width:440px)
+ {
+    .flag
+{
+    left: 40%;
+}
+}
+@media only screen and (min-width:990px)
+ {
+    .flag
+{
+
+    left: 42%;
+    width: 115px;
+    position: absolute;
+    height: 110px;
+    top: 295px;
+}
+.car{
+    width: 400px;
+}
+.wheel img{
+    width: 80px;
+}
+.Backwheel {
+    left: -172px;
+    bottom: 32px;
+    position: absolute;
+}
+.Frontwheel {
+    bottom: 33px;
+    left: 78px;
+    position: absolute;
+}
+ }
+ @media only screen and (min-width:1500px)
+ {
+    .flag
+{
+    left: 44%;
+    width: 115px;
+    position: absolute;
+    height: 110px;
+    top: 390px;
+}
+ }
+
+
